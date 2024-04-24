@@ -1,0 +1,30 @@
+.builder {
+  padding: 5rem;
+  background-color: rgba(246, 250, 254, 0.965);
+
+  &__logo {
+    display: flex;
+  }
+  &__title {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
+    padding: 1rem 3rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__logo-link {
+  margin-right: 1.5rem;
+}

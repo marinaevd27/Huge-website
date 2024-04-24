@@ -1,0 +1,36 @@
+.button-1 {
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.button-2 {
+  text-transform: uppercase;
+  color: white;
+  background-color: #116fd4;
+  border: 1px solid #116fd4;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.section__title {
+}
+.section__subtitle {
+}
+
+/* icons */
+.icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  font-size: 1.4rem;
+  background-color: #116fd4;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}

@@ -1,0 +1,145 @@
+.footer {
+  background-color: black;
+  padding: 5rem;
+
+  &__items {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  &__item {
+    width: calc((100% - 9rem) / 4);
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-items {
+    color: rgb(171, 170, 170);
+    border-bottom: 1px solid #6b6b6b;
+    padding: 0.8rem;
+
+    &:last-child {
+      border-bottom: none;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__list-items-icon {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #116fd4;
+    }
+  }
+
+  &__button {
+    padding: 1rem;
+    margin: 0.3rem;
+    background-color: gray;
+    color: rgb(223, 218, 218);
+    transition: all 0.3s;
+    border: none;
+
+    &:hover {
+      color: white;
+      background-color: #116fd4;
+    }
+  }
+
+  &__addres {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      border-bottom: 1px solid #6b6b6b;
+      padding: 1.2rem 0;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    > :first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__mailing-icons {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+
+  &__mailing-link {
+    color: #6b6b6b;
+
+    &:hover {
+      color: #116fd4;
+    }
+  }
+
+  &__form {
+  }
+
+  &__label {
+  }
+
+  &__label-input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__label-textarea {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  &__form-button {
+    text-transform: uppercase;
+    color: white;
+    background-color: #116fd4;
+    border: 1px solid #116fd4;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  &__logo {
+    padding-top: 3rem;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #6b6b6b;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__item {
+    width: calc((100% - 6rem) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__item {
+    width: 100%;
+  }
+}

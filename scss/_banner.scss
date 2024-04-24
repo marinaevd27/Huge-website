@@ -1,0 +1,130 @@
+// .banner {
+//   width: 100%;
+//   min-height: 70vh;
+//   position: relative;
+
+//   &__container {
+//     display: flex;
+//     align-items: flex-start;
+//     flex-direction: column;
+//     justify-content: center;
+//     min-height: 70vh;
+//   }
+// }
+
+// .banner__img {
+//   position: absolute;
+//   object-fit: cover;
+//   z-index: 1;
+//   opacity: 0.6;
+// }
+
+// .banner__text {
+//   position: relative;
+//   z-index: 10;
+//   color: black;
+//   max-width: 80%;
+// }
+
+// .heading {
+//   line-height: 1.4;
+//   font-size: 5rem;
+//   font-weight: bold;
+//   margin-bottom: 1.5rem;
+// }
+
+// .heading__desc {
+//   font-weight: normal;
+//   font-size: 1.7rem;
+//   padding-bottom: 3rem;
+// }
+// .heading__button-1 {
+//   text-transform: uppercase;
+//   color: white;
+//   background-color: #116fd4;
+//   border: 1px solid #116fd4;
+//   font-size: 1rem;
+//   padding: 1rem 2rem;
+//   border-radius: 15px;
+//   margin-right: 0.5rem;
+//   cursor: pointer;
+// }
+
+// .heading__button-2 {
+//   text-transform: uppercase;
+//   color: #116fd4;
+//   font-size: 1rem;
+//   background-color: white;
+//   border: 1px solid white;
+//   padding: 1rem 2rem;
+//   border-radius: 15px;
+//   cursor: pointer;
+// }
+.banner {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+    color: black;
+    max-width: 80%;
+  }
+}
+
+.heading {
+  line-height: 1.4;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+
+  &__desc {
+    font-weight: normal;
+    font-size: 1.7rem;
+    padding-bottom: 3rem;
+  }
+
+  &__button-1,
+  &__button-2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  &__button-1 {
+    color: white;
+    background-color: #116fd4;
+    border: 1px solid #116fd4;
+    margin-right: 0.5rem;
+  }
+
+  &__button-2 {
+    color: #116fd4;
+    background-color: white;
+    border: 1px solid white;
+  }
+}
+@media (max-width: 768px) {
+  .heading {
+    line-height: 1.2;
+    font-size: 3.5rem;
+  }
+}

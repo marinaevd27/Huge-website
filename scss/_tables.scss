@@ -1,0 +1,143 @@
+.tables {
+  padding-block: 7rem;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__item {
+    width: calc((100% - 6rem) / 4);
+    // padding: 2rem;
+    border: 1px solid rgb(231, 230, 230);
+    text-align: center;
+
+    &-title {
+      color: gray;
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.tables {
+  &__item {
+    &-list {
+      list-style: none;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      color: gray;
+
+      &-item {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.tables {
+  &__text {
+    width: 100%;
+    color: gray;
+    background-color: rgb(235, 231, 231);
+    padding: 1rem 0rem;
+  }
+  &__text-span {
+    color: black;
+  }
+
+  &__button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(171, 170, 170);
+    border: none;
+  }
+}
+.tables {
+  &__standart-icon {
+    font-size: 3rem;
+    color: gray;
+  }
+}
+
+.tables {
+  .tables__item {
+    &:nth-child(2) {
+      &:hover {
+        border: 1px solid #70a1ff;
+        cursor: pointer;
+      }
+    }
+
+    &:nth-child(2) {
+      .tables__item-title {
+        color: #70a1ff;
+      }
+      .tables__business-icon {
+        color: #70a1ff;
+        font-size: 3rem;
+      }
+      .tables__button {
+        background-color: #70a1ff;
+        color: white;
+      }
+    }
+
+    &:nth-child(3) {
+      &:hover {
+        border: 1px solid #ff6b81;
+        cursor: pointer;
+      }
+
+      .tables__item-title {
+        color: #ff6b81;
+      }
+      .tables__premium-icon {
+        color: #ff6b81;
+        font-size: 3rem;
+      }
+      .tables__button {
+        background-color: #ff6b81;
+        color: white;
+      }
+    }
+
+    &:nth-child(4) {
+      &:hover {
+        border: 1px solid #136836;
+        cursor: pointer;
+      }
+
+      .tables__item-title {
+        color: #136836;
+      }
+      .tables__ultimate-icon {
+        color: #136836;
+        font-size: 3rem;
+      }
+      .tables__button {
+        background-color: #136836;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .tables {
+    padding: 10rem;
+  }
+  .tables__item {
+    width: calc((100% - 4rem) / 2);
+  }
+}
+@media (max-width: 768px) {
+  .tables__item {
+    width: 100%;
+  }
+}

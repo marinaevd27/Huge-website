@@ -1,0 +1,212 @@
+// .team__section {
+//   margin-top: 4rem;
+// }
+// .recent__desc {
+//   text-align: center;
+// }
+// .recent__title {
+//   text-align: center;
+// }
+
+// .team__item {
+//   width: 23%;
+// }
+
+// .team__items {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 2rem;
+// }
+// .staff__img-wrapper {
+//   // height: 30rem;
+//   // width: auto;
+//   width: 100%;
+//   height: auto;
+// }
+// .staff__img {
+//   object-fit: cover;
+// }
+
+// .team__text-wrapper {
+//   text-align: center;
+//   padding: 1rem;
+//   background-color: rgba(246, 250, 254, 0.965);
+//   width: 100%;
+//   height: auto;
+// }
+// .team__title {
+// }
+// .team__subtitle {
+//   color: var(--color1);
+//   margin-bottom: 1.5rem;
+// }
+// .team__text {
+//   color: gray;
+//   margin-bottom: 2rem;
+// }
+
+// .arrow__text {
+//   font-size: 1.4rem;
+//   padding-left: 30%;
+// }
+
+// .team__arrow {
+//   height: 4rem;
+//   display: flex;
+//   align-items: center;
+//   position: relative;
+//   left: -1rem;
+//   background-color: white;
+//   width: 80%;
+//   cursor: pointer;
+//   transition: all 0.3s;
+//   color: gray;
+// }
+
+// .team__arrow::before {
+//   content: "";
+//   position: absolute;
+//   right: -2rem;
+//   height: 4rem;
+//   width: 2.1rem;
+//   // clip-path: polygon(0 0, 0% 100%, 100% 50%);
+//   clip-path: polygon(0% 0%, 5% 0, 100% 50%, 5% 100%, 0% 100%);
+//   transition: all 0.3s;
+//   background-color: white;
+// }
+
+// .team__arrow:hover {
+//   background-color: var(--color1);
+//   color: white;
+// }
+// .team__arrow:hover::before {
+//   background-color: var(--color1);
+// }
+// .team__arrow:hover .fa-arrow-right {
+//   color: white;
+// }
+// .fa-arrow-right {
+//   color: var(--color1);
+//   margin-left: 2rem;
+// }
+
+// варіант 2
+.team {
+  &__section {
+    margin-top: 4rem;
+  }
+
+  &__item {
+    width: 23%;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  &__text-wrapper {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(246, 250, 254, 0.965);
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    // add title specific styles if necessary
+  }
+
+  &__subtitle {
+    color: var(--color1);
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    color: gray;
+    margin-bottom: 2rem;
+  }
+
+  &__arrow {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -1rem;
+    background-color: white;
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: gray;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -2rem;
+      height: 4rem;
+      width: 2.1rem;
+      clip-path: polygon(0% 0%, 5% 0, 100% 50%, 5% 100%, 0% 100%);
+      transition: all 0.3s;
+      background-color: white;
+    }
+
+    &:hover {
+      background-color: var(--color1);
+      color: white;
+
+      &::before {
+        background-color: var(--color1);
+      }
+
+      .fa-arrow-right {
+        color: white;
+      }
+    }
+  }
+}
+
+.fa-arrow-right {
+  color: var(--color1);
+  margin-left: 2rem;
+}
+
+.recent {
+  &__desc,
+  &__title {
+    text-align: center;
+  }
+}
+
+.staff {
+  &__img-wrapper {
+    // height: 30rem;
+    // width: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
+.arrow {
+  &__text {
+    font-size: 1.4rem;
+    padding-left: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .team__item {
+    width: 48%;
+    padding-inline: 7rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .team__item {
+    width: 100%;
+  }
+}
